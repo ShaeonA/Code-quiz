@@ -2,7 +2,7 @@ var startbtn = document.getElementById("startbtn")
 var infoBox = document.querySelector(".info-box")
 var continuebtn = document.querySelector(".restart")
 var quizque = document.querySelector(".title")
-// var quizans = document.querySelector(".")
+var quizans = document.querySelector(".choices")
 console.log(infoBox)
 var questionsArr = [
     { questionTitle : "is the sky blue?",
@@ -15,7 +15,7 @@ var questionsArr = [
 function continueOn(){
     infoBox.style.display = "none";
     quizque.textContent = questionsArr[0].questionTitle
-    quizque.textContent = questionsArr[0].questionChoices[0]
+    quizque.textContent = questionsArr[0].questionChoices
   
 
 
