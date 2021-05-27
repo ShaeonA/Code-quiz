@@ -30,9 +30,9 @@ function continueOn(){
 
 // create a function to attach to choices.
 function qchoices () {
-    
+    var curquest = document.querySelector(".choices")
 }
-// Inside function acdess current question, figure out what choice was made or if it is right or wrong. 
+// Inside function access current question, figure out what choice was made or if it is right or wrong. 
 
 
 startbtn.addEventListener("click", function(){
