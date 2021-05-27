@@ -80,3 +80,10 @@ body{
     border-radius: 5px;
     margin: 0 auto;
 }
+
+.choices {
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+    margin: 0 auto;
+}
