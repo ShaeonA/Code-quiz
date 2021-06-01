@@ -87,3 +87,10 @@ body{
     border-radius: 5px;
     margin: 0 auto;
 }
+
+#continue {
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+    margin: 0 auto;  
+}

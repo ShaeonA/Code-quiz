@@ -3,6 +3,7 @@ var infoBox = document.querySelector(".info-box")
 var continuebtn = document.querySelector(".restart")
 var quizque = document.querySelector(".title")
 var quizans = document.querySelector(".choices")
+var select = document.getElementById ("continue")
 var counterque = 0
 var start = 15
 
@@ -13,16 +14,16 @@ var questionsArr = [
     {
         questionTitle: "is the sky blue?",
         questionChoices: [
-            'A : Yes',
-            'B : No '],
+            ' Yes',
+            ' No '],
         answers: ["yes"]
     },
 
 ]
 
 
-function checkAnswers() {
-    
+function answersButt () {
+    select.innerHTML =  questionsArr[0].questionChoices;
 }
 
 function continueOn() {
@@ -48,7 +49,7 @@ startbtn.addEventListener("click", function () {
     // alert("I have been clicked");
     startbtn.style.display = "none";
     infoBox.style.display = "block";
-
+    
 
 })
 continuebtn.addEventListener("click", continueOn)
