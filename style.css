@@ -94,3 +94,7 @@ body{
     border-radius: 5px;
     margin: 0 auto;  
 }
+
+.question-box {
+    display: none;
+}
