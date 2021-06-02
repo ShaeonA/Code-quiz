@@ -8,7 +8,8 @@ var choice1 = document.querySelector(".c1")
 var choice2 = document.querySelector(".c2")
 var counterindex = 0
 var start = 15
-
+var time = 45
+var timeIntervalid;
 
 
 //console.log(infoBox)
@@ -53,9 +54,19 @@ var questionsArr = [
 ]
 
 
-function answersButt() {
-    select.innerHTML = questionsArr[0].questionChoices;
+function startTimer () {
+    timeIntervalid = setInterval(function(){
+console.log(time);
+time --;
+
+if (time===0) {
+    endGame();
 }
+    },1000)
+}
+// function answersButt() {
+//     select.innerHTML = questionsArr[0].questionChoices;
+// }
 
 function continueOn() {
     document.getElementById("timer").style.display = "block";
@@ -85,6 +96,7 @@ if (counterindex< questionsArr.length) {
 }
 
 function endGame(){
+clearInterval(timeIntervalid)
   document.getElementById("timer").style.display = "none";
 alert("You have reached the end of the game")
 window.prompt("Please Input your intials")
